@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home - My first VueJS app</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  </head>
+  <body>
+    <h1>Vue JS</h1>
+
+    <div id="app">
+      <h2>Me as template</h2>
+      {{title}} {{autho}} {{age}}
+
+      <p><button v-on:click="age++">Increase Age</button></p>
+      <p><button v-on:click="age--">Increase Age</button></p>
+      <div @click="changeTitle">Change text</div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
